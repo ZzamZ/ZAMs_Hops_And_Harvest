@@ -1,5 +1,5 @@
-// 1.20.1	2024-09-10T12:26:36.8786873	Global Loot Modifiers : hopsharvest
+// 1.20.1	2024-09-10T12:38:43.6102871	Global Loot Modifiers : hopsharvest
 2abf9e46508730083a910ea3663f01ef0ae366ac data/forge/loot_modifiers/global_loot_modifiers.json
-e468ea380a17125e710bee57ed9ecd84f0edb791 data/hopsharvest/loot_modifiers/hops_seeds_from_dungeon.json
+53a1cba5680c1b04f00f06eefe83d113c79795cb data/hopsharvest/loot_modifiers/hops_seeds_from_dungeon.json
 47b334e4925d149ed09cb99e01cc9cb3729ddc4f data/hopsharvest/loot_modifiers/hops_seeds_from_mineshaft.json
 671d68b74f8a33846a8f0f0adc25d69343ab1399 data/hopsharvest/loot_modifiers/hops_seeds_from_shipwreck.json
