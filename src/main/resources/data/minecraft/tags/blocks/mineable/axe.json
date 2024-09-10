@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "hopsharvest:mug_of_sun_pale_ale",
+    "hopsharvest:mug_of_digger_bitter",
+    "hopsharvest:mug_of_nether_porter",
+    "hopsharvest:mug_of_wither_stout",
+    "hopsharvest:mug_of_magnet_pilsner",
+    "hopsharvest:mug_of_drowned_ale",
+    "hopsharvest:mug_of_night_rauch",
+    "hopsharvest:mug_of_ice_beer",
+    "hopsharvest:mug_of_kvass",
+    "hopsharvest:mug_of_leprechaun_cider",
+    "hopsharvest:mug_of_chorus_ale",
+    "hopsharvest:mug_of_nimbus_nectar",
+    "hopsharvest:mug_of_stardrop_sparkle"
+  ]
+}
