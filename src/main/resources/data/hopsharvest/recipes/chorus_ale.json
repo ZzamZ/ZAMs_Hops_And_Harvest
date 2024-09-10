@@ -1,0 +1,20 @@
+{
+  "type": "hopsharvest:beer_brewing",
+  "ingredients": [
+    {
+      "item": "hopsharvest:hop"
+    },
+    {
+      "item": "hopsharvest:dry_seeds"
+    },
+    {
+      "item": "minecraft:phantom_membrane"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    }
+  ],
+  "output": {
+    "item": "hopsharvest:mug_of_chorus_ale"
+  }
+}

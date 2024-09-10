@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "hopsharvest:block/mug_of_drowned_ale" },
+    "facing=east": { "model": "hopsharvest:block/mug_of_drowned_ale", "y": 90 },
+    "facing=south": { "model": "hopsharvest:block/mug_of_drowned_ale", "y": 180 },
+    "facing=west": { "model": "hopsharvest:block/mug_of_drowned_ale", "y": 270 }
+  }
+}

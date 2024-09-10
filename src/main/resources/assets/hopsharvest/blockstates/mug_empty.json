@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "hopsharvest:block/mug_empty" },
+    "facing=east": { "model": "hopsharvest:block/mug_empty", "y": 90 },
+    "facing=south": { "model": "hopsharvest:block/mug_empty", "y": 180 },
+    "facing=west": { "model": "hopsharvest:block/mug_empty", "y": 270 }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hopsharvest:hop"
+    }
+  ],
+  "result": {
+    "item": "hopsharvest:hop_seeds"
+  }
+}

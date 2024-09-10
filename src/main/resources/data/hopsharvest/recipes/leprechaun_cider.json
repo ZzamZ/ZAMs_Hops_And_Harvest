@@ -1,0 +1,20 @@
+{
+  "type": "hopsharvest:beer_brewing",
+  "ingredients": [
+    {
+      "item": "hopsharvest:hop"
+    },
+    {
+      "item": "hopsharvest:dry_seeds"
+    },
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "minecraft:rabbit_foot"
+    }
+  ],
+  "output": {
+    "item": "hopsharvest:mug_of_leprechaun_cider"
+  }
+}

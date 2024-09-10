@@ -1,0 +1,5 @@
+{
+  "stardrop": {"sounds": [{"name": "hopsharvest:effect/stardrop", "stream": true}]},
+  "potion_effect_begin": {"sounds": [{"name": "hopsharvest:effect/potion_effect_begin", "stream": true}]},
+  "potion_effect_end": {"sounds": [{"name": "hopsharvest:effect/potion_effect_end", "stream": true}]}
+}

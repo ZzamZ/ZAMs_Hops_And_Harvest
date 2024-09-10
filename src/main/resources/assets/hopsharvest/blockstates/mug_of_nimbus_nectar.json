@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "hopsharvest:block/mug_of_nimbus_nectar" },
+    "facing=east": { "model": "hopsharvest:block/mug_of_nimbus_nectar", "y": 90 },
+    "facing=south": { "model": "hopsharvest:block/mug_of_nimbus_nectar", "y": 180 },
+    "facing=west": { "model": "hopsharvest:block/mug_of_nimbus_nectar", "y": 270 }
+  }
+}

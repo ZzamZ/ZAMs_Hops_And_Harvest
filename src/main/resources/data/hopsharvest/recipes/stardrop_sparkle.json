@@ -1,0 +1,20 @@
+{
+  "type": "hopsharvest:beer_brewing",
+  "ingredients": [
+    {
+      "item": "hopsharvest:hop"
+    },
+    {
+      "item": "hopsharvest:dry_seeds"
+    },
+    {
+      "item": "hopsharvest:stardrop"
+    },
+    {
+      "item": "minecraft:nether_star"
+    }
+  ],
+  "output": {
+    "item": "hopsharvest:mug_of_stardrop_sparkle"
+  }
+}

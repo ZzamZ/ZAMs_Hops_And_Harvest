@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "hopsharvest:hop"
+    },
+    "title": {
+        "text": "Hopping Around"
+    },
+    "description": {
+      "text": "Get hop by growing hop seeds on the bottom side of a block."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "hopsharvest:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hopsharvest:hop"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

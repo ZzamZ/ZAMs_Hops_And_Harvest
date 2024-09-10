@@ -1,0 +1,20 @@
+{
+  "type": "hopsharvest:beer_brewing",
+  "ingredients": [
+    {
+      "item": "hopsharvest:hop"
+    },
+    {
+      "item": "hopsharvest:dry_seeds"
+    },
+    {
+      "item": "minecraft:prismarine_crystals"
+    },
+    {
+      "item": "minecraft:prismarine_shard"
+    }
+  ],
+  "output": {
+    "item": "hopsharvest:mug_of_drowned_ale"
+  }
+}

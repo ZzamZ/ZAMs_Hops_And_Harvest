@@ -1,0 +1,20 @@
+{
+  "type": "hopsharvest:beer_brewing",
+  "ingredients": [
+    {
+      "item": "hopsharvest:hop"
+    },
+    {
+      "item": "hopsharvest:dry_seeds"
+    },
+    {
+      "item": "minecraft:iron_nugget"
+    },
+    {
+      "item": "minecraft:redstone"
+    }
+  ],
+  "output": {
+    "item": "hopsharvest:mug_of_magnet_pilsner"
+  }
+}

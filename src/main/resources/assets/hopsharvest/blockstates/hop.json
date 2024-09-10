@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "berries=false": {
+      "model": "hopsharvest:block/hop"
+    },
+    "berries=true": {
+      "model": "hopsharvest:block/hop_mature"
+    }
+  }
+}

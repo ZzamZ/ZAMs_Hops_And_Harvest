@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "hopsharvest:block/keg" },
+    "facing=east": { "model": "hopsharvest:block/keg", "y": 90 },
+    "facing=south": { "model": "hopsharvest:block/keg", "y": 180 },
+    "facing=west": { "model": "hopsharvest:block/keg", "y": 270 }
+  }
+}
