@@ -4,7 +4,13 @@
     {
       "condition": "forge:loot_table_id",
       "loot_table_id": "minecraft:chests/simple_dungeon"
+    },
+    {
+      "chance": 0.25,
+      "condition": "minecraft:random_chance"
     }
   ],
-  "item": "hopsharvest:hop_seeds"
+  "item": "hopsharvest:hop_seeds",
+  "max_count": 5,
+  "min_count": 1
 }

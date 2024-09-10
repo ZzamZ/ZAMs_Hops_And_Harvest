@@ -13,17 +13,26 @@ import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Random;
 import java.util.function.Supplier;
 
 public class DungeonChests extends LootModifier {
-    public static final Supplier<Codec<DungeonChests>> CODEC = Suppliers.memoize(()
-    -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
-            .fieldOf("item").forGetter(m -> m.item)).apply(inst, DungeonChests::new)));
-    private final Item item;
+    public static final Supplier<Codec<DungeonChests>> CODEC = Suppliers.memoize(() ->
+            RecordCodecBuilder.create(inst -> codecStart(inst)
+                    .and(ForgeRegistries.ITEMS.getCodec().fieldOf("item").forGetter(m -> m.item))
+                    .and(Codec.INT.fieldOf("min_count").forGetter(m -> m.minCount))
+                    .and(Codec.INT.fieldOf("max_count").forGetter(m -> m.maxCount))
+                    .apply(inst, DungeonChests::new)));
 
-    public DungeonChests(LootItemCondition[] conditionsIn, Item item) {
+    private final Item item;
+    private final int minCount;
+    private final int maxCount;
+
+    public DungeonChests(LootItemCondition[] conditionsIn, Item item, int minCount, int maxCount) {
         super(conditionsIn);
         this.item = item;
+        this.minCount = minCount;
+        this.maxCount = maxCount;
     }
 
     @Override
@@ -33,10 +42,18 @@ public class DungeonChests extends LootModifier {
                 return generatedLoot;
             }
         }
-        generatedLoot.add(new ItemStack(this.item));
+
+        if (new Random().nextFloat() <= 0.75f) {
+            Random random = new Random();
+            int count = random.nextInt(maxCount - minCount + 1) + minCount;  // Random count between 1-4
+            generatedLoot.add(new ItemStack(this.item, count));  // Add the item with random count
+        }
 
         return generatedLoot;
     }
+
+
+
 
     @Override
     public Codec<? extends IGlobalLootModifier> codec() {

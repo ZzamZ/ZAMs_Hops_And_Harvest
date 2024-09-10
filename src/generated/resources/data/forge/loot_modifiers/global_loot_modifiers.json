@@ -1,5 +1,7 @@
 {
   "entries": [
+    "hopsharvest:hops_seeds_from_shipwreck",
+    "hopsharvest:hops_seeds_from_mineshaft",
     "hopsharvest:hops_seeds_from_dungeon"
   ],
   "replace": false
