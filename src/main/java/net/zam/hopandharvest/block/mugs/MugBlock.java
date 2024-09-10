@@ -10,8 +10,11 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
 
 public class MugBlock extends Block {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
@@ -29,7 +32,11 @@ public class MugBlock extends Block {
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
+        Player player = context.getPlayer();
+        if (player != null && player.isCrouching()) {
+            return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
+        }
+        return null;
     }
 
     @Override
@@ -47,5 +54,10 @@ public class MugBlock extends Block {
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(FACING);
+    }
+
+    @Override
+    public InteractionResult use(BlockState state, net.minecraft.world.level.Level world, BlockPos pos, Player player, InteractionHand hand, net.minecraft.world.phys.BlockHitResult hit) {
+        return InteractionResult.SUCCESS;
     }
 }
