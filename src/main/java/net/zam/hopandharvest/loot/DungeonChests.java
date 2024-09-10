@@ -37,20 +37,27 @@ public class DungeonChests extends LootModifier {
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext lootContext) {
+        // Check conditions
         for (LootItemCondition condition : this.conditions) {
             if (!condition.test(lootContext)) {
                 return generatedLoot;
             }
         }
 
-        if (new Random().nextFloat() <= 0.75f) {
-            Random random = new Random();
-            int count = random.nextInt(maxCount - minCount + 1) + minCount;  // Random count between 1-4
-            generatedLoot.add(new ItemStack(this.item, count));  // Add the item with random count
-        }
+        Random random = new Random();
+        int count = random.nextInt(maxCount - minCount + 1) + minCount;  // Random count between minCount and maxCount
+
+        // Debugging: Print the item count for verification
+        System.out.println("Random count generated: " + count);
+
+        // Add the item stack with the random count
+        generatedLoot.add(new ItemStack(this.item, count));
 
         return generatedLoot;
     }
+
+
+
 
 
 

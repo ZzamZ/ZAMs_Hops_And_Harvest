@@ -19,17 +19,17 @@ public class ZAMGlobalLootModifierProvider extends GlobalLootModifierProvider {
     protected void start() {
         add("hops_seeds_from_dungeon", new DungeonChests(new LootItemCondition[]{
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/simple_dungeon")).build(),
-                LootItemRandomChanceCondition.randomChance(0.25f).build() }, // 25% chance
+                LootItemRandomChanceCondition.randomChance(0.50f).build() }, //50% chance
                 ZAMItems.HOP_SEEDS.get(), 1, 5));
 
         add("hops_seeds_from_mineshaft", new DungeonChests(new LootItemCondition[]{
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/abandoned_mineshaft")).build(),
-                LootItemRandomChanceCondition.randomChance(0.25f).build() }, // 25% chance
+                LootItemRandomChanceCondition.randomChance(0.90f).build() }, // 90% chance
                 ZAMItems.HOP_SEEDS.get(), 1, 5));
 
         add("hops_seeds_from_shipwreck", new DungeonChests(new LootItemCondition[]{
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/shipwreck_supply")).build(),
-                LootItemRandomChanceCondition.randomChance(0.25f).build() }, // 25% chance
+                LootItemRandomChanceCondition.randomChance(0.60f).build() }, // 60% chance
                 ZAMItems.HOP_SEEDS.get(), 1, 5));
     }
 }
