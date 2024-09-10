@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "hopsharvest:hop_seeds"
+    },
+    "title": "ZAM's Hops & Harvest",
+    "description": "Discover Hop seeds",
+    "background": "minecraft:textures/block/spruce_planks.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hopsharvest:hop_seeds"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
